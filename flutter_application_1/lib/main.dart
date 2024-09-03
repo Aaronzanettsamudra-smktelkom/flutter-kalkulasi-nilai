@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/column_row.dart';
 import 'package:flutter_application_1/dialog.dart';
 import 'package:flutter_application_1/scaffold.dart';
+import 'package:flutter_application_1/stack_position.dart';
+import 'package:flutter_application_1/tugas_pak_bidin.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,15 +17,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Belajar Flutter Cuy',
-      theme: ThemeData(
-        colorScheme:
-            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 69, 141, 224)),
-        useMaterial3: true,
-      ),
+      // theme: ThemeData(
+      //   colorScheme:
+      //       ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 69, 141, 224)),
+      //   useMaterial3: true,
+      // ),
       // home: const MyHomePage(title: 'Belajar Flutter'),
       // home: Image(image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg')),
-      home: scaffold(),
-      // home: dialog()
+      // home: scaffold(),
+      // home: dialog(),
+      // home: ColumnRow(),
+      // home: StackPosition(),
+      home: TugasPakBidin(),
     );
   }
 }

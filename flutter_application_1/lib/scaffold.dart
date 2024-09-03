@@ -1,4 +1,7 @@
 import 'dart:io';
+import 'package:flutter_application_1/input_selection.dart';
+
+import 'date_picker.dart';
 import 'dialog.dart';
 import 'package:flutter/material.dart';
 
@@ -78,7 +81,11 @@ class _ScaffoldState extends State<scaffold> {
               style: TextStyle(fontSize: 24),
             ),
             // Image(image: AssetImage('assets/img/long cat.jpg')),
-            dialog()
+            // dialog()
+            inputSelection(),
+            const date_Widget(
+              title: '',
+            ),
           ],
         ),
       ),
